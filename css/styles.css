@@ -28,7 +28,7 @@ button[type="submit"] {
 
 .logo {
   margin-top: 20px;
-  width: 65%;
+  width: 10rem;
 }
 
 .flex-container {
@@ -100,7 +100,7 @@ button[type="submit"] {
   }
 
   .logo {
-    width: 40%;
+    width: 10rem;
   }
 
   .flex-container {
@@ -125,7 +125,7 @@ button[type="submit"] {
 
 @media (min-width: 1024px) {
   .wrapper {
-    width: 80%;
-    max-width: 1000px;
+    width: 90%;
+    max-width: 1150px;
   }
 }
