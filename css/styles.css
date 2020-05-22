@@ -1,0 +1,131 @@
+/* ********************************** BASE ********************************** */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../images/bg-mobile.svg);
+  background-color: hsl(257, 40%, 49%);
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+button[type="submit"] {
+  border: none;
+}
+
+/* ****************************** MAIN CONTENT ****************************** */
+
+.logo {
+  margin-top: 20px;
+  width: 65%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  /* small screens */
+  text-align: center;
+}
+
+button[type="submit"] {
+  cursor: pointer;
+  padding: 10px 80px;
+  border-radius: 20px;
+  color: hsl(257, 40%, 49%);
+  background-color: #fff;
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 2px 1px black;
+}
+
+.primary-img,
+.secondary-content {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+
+.secondary-content > p {
+  font-size: 1.2rem;
+}
+
+[class="content"] {
+  padding: 30px 0 30px;
+}
+
+/* ********************************* FOOTER ********************************* */
+
+.main-footer {
+  margin-bottom: 20px;
+}
+
+.icons {
+  /* small screens */
+  text-align: center;
+}
+
+.social {
+  height: 30px;
+  width: 30px;
+  opacity: 0.5;
+  margin-right: 10px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.social:hover {
+  opacity: 1;
+  transform: rotate(10deg);
+}
+
+/* ******************************* MEDIA QUERY ****************************** */
+
+@media (min-width: 1000px) {
+  body {
+    background: url(../images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+  .flex-container {
+    flex-direction: row;
+    align-items: center;
+    text-align: initial;
+    align-items: center;
+  }
+
+  .primary-img {
+    flex: 4;
+  }
+
+  .secondary-content {
+    flex: 3;
+  }
+
+  .icons {
+    text-align: right;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    width: 80%;
+    max-width: 1000px;
+  }
+}
