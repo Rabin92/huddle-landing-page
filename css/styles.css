@@ -33,6 +33,7 @@ button[type="submit"] {
 
 .flex-container {
   display: flex;
+  min-height: 80vh;
   flex-direction: column;
   /* small screens */
   text-align: center;
@@ -48,10 +49,19 @@ button[type="submit"] {
   box-shadow: 2px 2px 2px 1px black;
 }
 
+button[type="submit"]:hover {
+  transform: translateY(3px);
+}
+
 .primary-img,
 .secondary-content {
   padding-left: 1em;
   padding-right: 1em;
+}
+
+.primary-img,
+.secondary-content {
+  align-self: center;
 }
 
 .heading {
@@ -83,12 +93,12 @@ button[type="submit"] {
   width: 30px;
   opacity: 0.5;
   margin-right: 10px;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
 }
 
 .social:hover {
   opacity: 1;
-  transform: rotate(10deg);
+  transform: rotate(10deg) scale(1.2);
 }
 
 /* ******************************* MEDIA QUERY ****************************** */
@@ -105,9 +115,7 @@ button[type="submit"] {
 
   .flex-container {
     flex-direction: row;
-    align-items: center;
     text-align: initial;
-    align-items: center;
   }
 
   .primary-img {
