@@ -129,6 +129,11 @@ button[type="submit"]:hover {
   .icons {
     text-align: right;
   }
+
+  button[type="submit"] {
+    border-radius: 50px;
+    padding: 12px 40px;
+  }
 }
 
 @media (min-width: 1024px) {
