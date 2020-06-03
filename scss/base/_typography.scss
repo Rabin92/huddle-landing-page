@@ -1,0 +1,29 @@
+/* ********************************** BASE ********************************** */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../images/bg-mobile.svg);
+  background-size: $bck-size;
+  background-color: $primary-color;
+  color: $white;
+  font-family: "Open Sans", sans-serif;
+  @media #{$medium} {
+    background: url(../images/bg-desktop.svg);
+    background-size: $bck-size;
+    background-color: $primary-color;
+  }
+}
+
+img {
+  max-width: $m-width;
+}
+
+.wrapper {
+  @include wrap($mrg: 0 auto);
+  @media #{$large} {
+    @include wrap($m-width: 1150px);
+  }
+}

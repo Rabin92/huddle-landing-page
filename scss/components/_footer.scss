@@ -1,0 +1,25 @@
+/* ********************************* FOOTER ********************************* */
+
+.main-footer {
+  margin-bottom: 20px;
+}
+
+.icons {
+  /* small screens */
+  text-align: center;
+  @media #{$medium} {
+    text-align: right;
+  }
+}
+
+.social {
+  height: 30px;
+  width: 30px;
+  opacity: 0.5;
+  margin-right: 10px;
+  transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+  &:hover {
+    opacity: 1;
+    transform: rotate(10deg) scale(1.2);
+  }
+}

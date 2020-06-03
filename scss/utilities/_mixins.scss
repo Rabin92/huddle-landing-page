@@ -1,0 +1,24 @@
+// Mixins
+
+@mixin flexy($dsp: flex, $dir: null, $align: null, $flex: null) {
+  display: $dsp;
+  flex-direction: $dir;
+  align-self: $align;
+  flex: $flex;
+}
+
+@mixin gutter() {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@mixin wrap($width: 90%, $mrg: null, $m-width: null) {
+  width: $width;
+  margin: $mrg;
+  max-width: $m-width;
+}
+
+@mixin btn($brdr: none, $cursor: pointer) {
+  border: $brdr;
+  cursor: $cursor;
+}
